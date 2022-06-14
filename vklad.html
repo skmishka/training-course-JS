@@ -1,0 +1,17 @@
+<meta charset = "utf-8">
+<script type="text/javascript">
+	
+	var sum = +prompt("Введите сумму вклада");
+	var procent = +prompt("Введите годовой процент вклада");
+	
+
+	for(i = 1; i<=5; i++){
+		var sumnew = sum + ((sum / 100) * procent);
+		sum = sumnew;
+		
+		document.write("Размер вашего вклада на " + i + " год  = " + sumnew.toFixed(1) + "<br>");
+	}
+	
+
+
+</script>

@@ -1,0 +1,58 @@
+<script type="text/javascript">
+	
+
+	function randomArray(n){
+	var numbers = [];
+	for (var i = 0; i < n; i++){
+		var randomNumber = parseInt(Math.random() * 100);
+		numbers.push(randomNumber);
+	}
+	return numbers;
+	}
+	
+
+	function sumArray(array){
+		var sumArray = 0;
+		for (var i = 0; i < array.length; i++){
+			sumArray = sumArray + array[i];
+		}
+		return sumArray;
+	}
+	
+
+	function maxArray(array){
+		var max = array[0];
+		for (var i = 1; i < array.length; i++){
+			if (max < array[i])
+				max = array[i];
+				}
+				return max;
+	}
+
+	function minArray(array){
+		var min = array[0];
+		for (var i = 1; i < array.length; i++){
+			if (min > array[i])
+				min = array[i];
+				}
+				return min;
+			}
+
+	function evenNumbersArray(array){
+		var evenNumber = [];
+		for(var i = 0; i < array.length; i++){
+			if ((array[i] % 2) == 0)
+				evenNumber.push(array[i])
+			 
+		}
+		return evenNumber
+	}
+
+	var newArray = randomArray(10);
+	alert("Array random nubbers  " + newArray);
+
+	alert("sum numbers   " + sumArray(newArray));
+	alert("maximum number " + maxArray(newArray));
+	alert("minimum number " + minArray(newArray));
+	alert("even number " + evenNumbersArray(newArray));
+</script>

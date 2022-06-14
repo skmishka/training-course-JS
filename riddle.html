@@ -1,0 +1,40 @@
+<meta charset = "utf-8">
+<script type="text/javascript">
+	
+	var correctAnswer = 0;
+	
+	alert("Сейчас вам будет предложено отгадать две загадки")
+	var otvet1 = prompt("Отгадайте загадку - висит груша, нельзя скушать. Что это?");
+
+	otvet1 = otvet1.toLowerCase();
+		if (otvet1 == "лампочка" || otvet1 == "лампа"){
+
+			correctAnswer ++;
+			alert("Поздравляем! Вы отгадали!");
+			
+		}
+
+		else {
+
+		alert("К сожалению вы не угадали")
+
+			}
+
+	var otvet2 = prompt("Кто живет в лесу с рогами?");
+		if (otvet2 == "лось" || otvet2 =="олень"){
+
+			correctAnswer ++;
+			alert("Поздравляем! Вы отгадали!");
+			
+		}
+
+		else {
+
+		alert("К сожалению вы не угадали")
+
+			}
+
+			alert("Количество правильных ответов: " + correctAnswer)
+
+
+</script>

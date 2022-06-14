@@ -1,0 +1,59 @@
+<script type="text/javascript">
+	
+/*function array (n){
+	var numbers = [];
+	for (var i = 1; i <= n; i++ ){
+		numbers.push(i);
+	}
+	return numbers;
+}
+alert (array(5));
+
+var newArray = array(5)
+
+//alert (newArray)
+
+
+function sumMasiv(array){
+	console.log("inside",array)
+	console.log("length",array.length)
+	var sumMasiv = 0;
+	for (var i = 0; i < array.length; i++){
+		
+		sumMasiv += array[i];
+		console.log(sumMasiv,array[i])
+	}
+	return sumMasiv;
+}
+
+console.log("result",sumMasiv(newArray))
+alert (sumMasiv(newArray));*/
+
+
+function randomArray(n){
+	var numbers = [];
+	for (var i = 0; i < n; i++){
+		var randomNumber = parseInt(Math.random() * 100);
+		numbers.push(randomNumber);
+	}
+return numbers;
+}
+
+
+var newRandomArray = randomArray(10);
+
+alert (newRandomArray);
+console.log("array", newRandomArray);
+
+	function findMax(randomArray){
+	var max = randomArray[0];
+	console.log("first elements =",randomArray[0]);
+	for (var i = 1; i < randomArray.length; i++){
+		if (randomArray[i] > max)
+			max = randomArray[i];
+	}
+	return max;
+}
+
+alert("max numbers" + findMax(newRandomArray));
+</script> 

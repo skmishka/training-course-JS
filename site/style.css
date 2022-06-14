@@ -1,0 +1,27 @@
+.header{
+	border-width: 0.14px;
+	border-color: #b5b7ba;
+	border-style: solid;
+	background-color: #dfdfdf;
+	height: 48px;
+	text-align: center;	
+	padding-top: 20px;
+}
+
+.header a {
+	color: #4d4d4d;
+	font-size: 20px;
+	font-weight: 100;
+	text-align: left;
+	padding-right: 25px;
+	
+	}
+.footer{
+	height: 50px;
+	background-color: #434445;
+	padding-top: 15px;
+	color: #a4a4a4;
+	font-size: 20px;
+	font-weight: 100;
+	text-align: center;
+}

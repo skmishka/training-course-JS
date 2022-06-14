@@ -1,0 +1,42 @@
+<meta charset = "utf-8">
+<script type="text/javascript">
+	
+	
+	function AskForWords(words){
+
+	while(words.length != 0){
+	var i = parseInt(Math.random() * words.length);
+	var userAnswer = prompt("Как переводится английское слово " + words[i][0]);
+	if (userAnswer == words[i][1]){
+		alert("Поздравляем, вы отгадали!");
+		words.splice(i, 1);
+	} else {
+		alert("Неправильно! Правильный ответ: " + words[i][1]);
+			}
+		}
+	
+	}
+
+	var wordsD = [
+		["define", "определять"],
+		["divided", "состоит"],
+		["development", "развитие"],
+		["depend", "зависеть"],
+		["dedicated","специальный"],
+		];
+
+		AskForWords(wordsD);
+		alert("Поздравляю, вы запомнили все слова! Переходим на другой уровень!");
+
+	var wordsE = [
+	["environment", "окружающая среда"],
+	["evaluation", "оценка"],
+	["explain", "объяснять"],
+	["embedded", "встроенный"],
+	["even", "даже"],
+	];
+
+	AskForWords(wordsE);
+	alert("Поздравляю, вы прошли все уровни!");
+
+</script>
